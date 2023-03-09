@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 .idea/
 IlluminatedCloud/
 GovUKGDS.iml
+
+# Org Based Development Files
+.sf/*
+manifest/*
