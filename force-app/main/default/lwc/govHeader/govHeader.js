@@ -10,7 +10,7 @@ import CROWN_LOGO from '@salesforce/resourceUrl/govuklogotypecrown';
 import getDefaultMenuItems from '@salesforce/apex/GovComponentHelper.getDefaultMenuItems';
 import govUKVariationLabel from '@salesforce/label/c.govUKVariation';
 
-export default class GovHeader extends LightningElement(NavigationMixin) {
+export default class GovHeader extends NavigationMixin(LightningElement) {
     
     crownLogo = CROWN_LOGO;
 
@@ -24,17 +24,9 @@ export default class GovHeader extends LightningElement(NavigationMixin) {
     @track menuItems = [];
     @track showMenuInMobile = false;
 
+    //Custom label for NHS branding 
     get nhsVariation() {
         return govUKVariationLabel === 'nhs';
-    }
-
-    get noVariation() {
-        // return true if there are no styling variations according to the govUKVariationLabel
-        if (govUKVariationLabel === undefined || govUKVariationLabel == null || govUKVariationLabel === '') {
-            return true;
-        }
-
-        return false;
     }
   
     connectedCallback() {
