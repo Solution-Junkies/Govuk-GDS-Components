@@ -548,7 +548,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>Finish_history</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -562,7 +562,7 @@
         </fields>
         <fields>
             <name>license_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -576,7 +576,7 @@
         </fields>
         <fields>
             <name>finish_panel</name>
-            <extensionName>uxgovuk:govPanel</extensionName>
+            <extensionName>c:govPanel</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>titleText</name>
@@ -596,7 +596,7 @@
         </fields>
         <fields>
             <name>finsih_nav</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -639,7 +639,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>Finish_history_0</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -653,7 +653,7 @@
         </fields>
         <fields>
             <name>fail_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -667,7 +667,7 @@
         </fields>
         <fields>
             <name>warning</name>
-            <extensionName>uxgovuk:govWarningText</extensionName>
+            <extensionName>c:govWarningText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>warningText</name>
@@ -681,7 +681,7 @@
         </fields>
         <fields>
             <name>fail_txt2</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -695,7 +695,7 @@
         </fields>
         <fields>
             <name>finsih_nav_0</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -741,7 +741,7 @@
         </connector>
         <fields>
             <name>personal_details_0</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -755,7 +755,7 @@
         </fields>
         <fields>
             <name>personal_errors_0</name>
-            <extensionName>uxgovuk:govErrorMessages</extensionName>
+            <extensionName>c:govErrorMessages</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
@@ -763,7 +763,7 @@
         </fields>
         <fields>
             <name>number_of_balls_back</name>
-            <extensionName>uxgovuk:govBackLink</extensionName>
+            <extensionName>c:govBackLink</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>backLinkLabel</name>
@@ -783,7 +783,7 @@
         </fields>
         <fields>
             <name>balls_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -797,7 +797,7 @@
         </fields>
         <fields>
             <name>Number_of_Balls</name>
-            <extensionName>uxgovuk:govRadios</extensionName>
+            <extensionName>c:govRadios</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>uniqueFieldId</name>
@@ -847,7 +847,7 @@
         </fields>
         <fields>
             <name>Personal_Nav_0</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -893,7 +893,7 @@
         </connector>
         <fields>
             <name>personal_details</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -907,7 +907,7 @@
         </fields>
         <fields>
             <name>personal_errors</name>
-            <extensionName>uxgovuk:govErrorMessages</extensionName>
+            <extensionName>c:govErrorMessages</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
@@ -915,7 +915,7 @@
         </fields>
         <fields>
             <name>back_to_launch_page</name>
-            <extensionName>uxgovuk:govBackLink</extensionName>
+            <extensionName>c:govBackLink</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>destinationPageName</name>
@@ -935,7 +935,7 @@
         </fields>
         <fields>
             <name>personal_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -951,7 +951,7 @@
         </fields>
         <fields>
             <name>Forename</name>
-            <extensionName>uxgovuk:govTextInput</extensionName>
+            <extensionName>c:govTextInput</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -983,7 +983,7 @@
         </fields>
         <fields>
             <name>Surname</name>
-            <extensionName>uxgovuk:govTextInput</extensionName>
+            <extensionName>c:govTextInput</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -1021,7 +1021,7 @@
         </fields>
         <fields>
             <name>Email_Address</name>
-            <extensionName>uxgovuk:govTextInput</extensionName>
+            <extensionName>c:govTextInput</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -1065,7 +1065,7 @@
         </fields>
         <fields>
             <name>Personal_Nav</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -1111,7 +1111,7 @@
         </connector>
         <fields>
             <name>Finish_history_0_0</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -1125,7 +1125,7 @@
         </fields>
         <fields>
             <name>license_txt_0</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -1139,7 +1139,7 @@
         </fields>
         <fields>
             <name>inset01</name>
-            <extensionName>uxgovuk:govInsetText</extensionName>
+            <extensionName>c:govInsetText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>insetText</name>
@@ -1153,7 +1153,7 @@
         </fields>
         <fields>
             <name>uploadField</name>
-            <extensionName>uxgovuk:govFileUpload</extensionName>
+            <extensionName>c:govFileUpload</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>recordId</name>
@@ -1174,7 +1174,7 @@
         </fields>
         <fields>
             <name>Photo_nav</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -1220,7 +1220,7 @@
         </connector>
         <fields>
             <name>Date_to_start_history</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -1234,7 +1234,7 @@
         </fields>
         <fields>
             <name>personal_errors_0_0_0_0</name>
-            <extensionName>uxgovuk:govErrorMessages</extensionName>
+            <extensionName>c:govErrorMessages</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
@@ -1242,7 +1242,7 @@
         </fields>
         <fields>
             <name>date_to_start_back</name>
-            <extensionName>uxgovuk:govBackLink</extensionName>
+            <extensionName>c:govBackLink</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>backLinkLabel</name>
@@ -1262,7 +1262,7 @@
         </fields>
         <fields>
             <name>start_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -1276,7 +1276,7 @@
         </fields>
         <fields>
             <name>date_to_start</name>
-            <extensionName>uxgovuk:govDate</extensionName>
+            <extensionName>c:govDate</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -1302,7 +1302,7 @@
         </fields>
         <fields>
             <name>Personal_Nav_0_0_0_0</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -1348,7 +1348,7 @@
         </connector>
         <fields>
             <name>Date_Started_history</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -1362,7 +1362,7 @@
         </fields>
         <fields>
             <name>personal_errors_0_0_0</name>
-            <extensionName>uxgovuk:govErrorMessages</extensionName>
+            <extensionName>c:govErrorMessages</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
@@ -1370,7 +1370,7 @@
         </fields>
         <fields>
             <name>date_started_back</name>
-            <extensionName>uxgovuk:govBackLink</extensionName>
+            <extensionName>c:govBackLink</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>backLinkLabel</name>
@@ -1390,7 +1390,7 @@
         </fields>
         <fields>
             <name>started_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -1404,7 +1404,7 @@
         </fields>
         <fields>
             <name>date_started</name>
-            <extensionName>uxgovuk:govDate</extensionName>
+            <extensionName>c:govDate</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -1430,7 +1430,7 @@
         </fields>
         <fields>
             <name>Personal_Nav_0_0_0</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -1476,7 +1476,7 @@
         </connector>
         <fields>
             <name>Summary_history</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -1490,7 +1490,7 @@
         </fields>
         <fields>
             <name>summary_list</name>
-            <extensionName>uxgovuk:govSummary</extensionName>
+            <extensionName>c:govSummary</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>instructionsHTML</name>
@@ -1537,7 +1537,7 @@
         </fields>
         <fields>
             <name>summary_nav</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
@@ -1583,7 +1583,7 @@
         </connector>
         <fields>
             <name>personal_details_0_0</name>
-            <extensionName>uxgovuk:govHistoryManager</extensionName>
+            <extensionName>c:govHistoryManager</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>pageName</name>
@@ -1597,7 +1597,7 @@
         </fields>
         <fields>
             <name>personal_errors_0_0</name>
-            <extensionName>uxgovuk:govErrorMessages</extensionName>
+            <extensionName>c:govErrorMessages</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
@@ -1605,7 +1605,7 @@
         </fields>
         <fields>
             <name>trick_history</name>
-            <extensionName>uxgovuk:govBackLink</extensionName>
+            <extensionName>c:govBackLink</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>backLinkLabel</name>
@@ -1625,7 +1625,7 @@
         </fields>
         <fields>
             <name>trick_txt</name>
-            <extensionName>uxgovuk:govMarkupText</extensionName>
+            <extensionName>c:govMarkupText</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>markupText</name>
@@ -1639,7 +1639,7 @@
         </fields>
         <fields>
             <name>impressive_trick</name>
-            <extensionName>uxgovuk:govTextArea</extensionName>
+            <extensionName>c:govTextArea</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>fieldId</name>
@@ -1683,7 +1683,7 @@
         </fields>
         <fields>
             <name>Personal_Nav_0_0</name>
-            <extensionName>uxgovuk:govNavigationButtons</extensionName>
+            <extensionName>c:govNavigationButtons</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputParameters>
                 <name>buttonActionsString</name>
