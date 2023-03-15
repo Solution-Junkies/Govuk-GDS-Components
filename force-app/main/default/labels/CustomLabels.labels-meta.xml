@@ -40,4 +40,11 @@
         <shortDescription>Surname Label</shortDescription>
         <value>Surname</value>
     </labels>
+    <labels>
+        <fullName>govUKVariation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>govUKVariation</shortDescription>
+        <value>nhs</value>
+    </labels>
 </CustomLabels>

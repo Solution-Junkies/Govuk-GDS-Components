@@ -507,3 +507,447 @@
         padding-top: 10px
     }
 }
+
+/* Scoped CSS */
+.nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    font-size: 2rem !important;
+    line-height: 1.09375 !important;
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+      font-size: 48px !important;
+      font-size: 3rem !important;
+      line-height: 1.04167;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+      font-size: 32pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-xl, .nhs-uk-scoped .app-prose-scope h1 {
+      margin-bottom: 50px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    font-size: 1.5rem !important;
+    line-height: 1.04167 !important;
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+      font-size: 36px !important;
+      font-size: 2.25rem !important;
+      line-height: 1.11111 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+      font-size: 24pt !important;
+      line-height: 1.05 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-l, .nhs-uk-scoped .app-prose-scope h2 {
+      margin-bottom: 30px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    line-height: 1.11111 !important;
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+      font-size: 24px !important;
+      font-size: 1.5rem !important;
+      line-height: 1.25 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+      font-size: 18pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-m, .nhs-uk-scoped .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope h3 {
+      margin-bottom: 20px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+    display: block !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
+      line-height: 1.31579 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+      font-size: 14pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-heading-s, .nhs-uk-scoped .app-prose-scope h4 {
+      margin-bottom: 20px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-caption-xl {
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    line-height: 1.11111 !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+    color: #505a5f !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-xl {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-caption-xl {
+      font-size: 27px !important;
+      font-size: 1.6875rem !important;
+      line-height: 1.11111 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-xl {
+      font-size: 18pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-caption-l {
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    line-height: 1.11111 !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+    color: #505a5f !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-l {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-caption-l {
+      font-size: 24px !important;
+      font-size: 1.5rem !important;
+      line-height: 1.25 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-l {
+      font-size: 18pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-caption-l {
+      margin-bottom: 0 !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-caption-m {
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+    display: block !important;
+    color: #505a5f;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-m {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-caption-m {
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
+      line-height: 1.31579 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-caption-m {
+      font-size: 14pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    font-size: 1.125rem !important;
+    line-height: 1.11111 !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+      font-size: 24px !important;
+      font-size: 1.5rem !important;
+      line-height: 1.25 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+      font-size: 18pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-l, .nhs-uk-scoped .govuk-body-lead {
+      margin-bottom: 30px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+      font-size: 19px !important;
+      font-size: 1.1875rem !important;
+      line-height: 1.31579 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+      font-size: 14pt !important;
+      line-height: 1.15 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-m, .nhs-uk-scoped .govuk-body, .nhs-uk-scoped .app-prose-scope p {
+      margin-bottom: 20px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-s {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    font-size: 0.875rem !important;
+    line-height: 1.14286 !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-s {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-s {
+      font-family: sans-serif !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-s {
+      font-size: 16px !important;
+      font-size: 1rem !important;
+      line-height: 1.25 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-s {
+      font-size: 14pt !important;
+      line-height: 1.2 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-s {
+      margin-bottom: 20px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-xs {
+    color: #0b0c0c !important;
+    font-family: "GDS Transport", arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    font-size: 0.75rem !important;
+    line-height: 1.25 !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-xs {
+      color: #000 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-xs {
+      font-family: sans-serif;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-xs {
+      font-size: 14px !important;
+      font-size: 0.875rem !important;
+      line-height: 1.42857 !important;
+    }
+  }
+  @media print {
+    .nhs-uk-scoped .govuk-body-xs {
+      font-size: 12pt !important;
+      line-height: 1.2 !important;
+    }
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-xs {
+      margin-bottom: 20px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-l + .govuk-heading-l, .nhs-uk-scoped .govuk-body-lead + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-l + h2, .nhs-uk-scoped .app-prose-scope .govuk-body-lead + h2 {
+    padding-top: 5px !important;
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-l + .govuk-heading-l, .nhs-uk-scoped .govuk-body-lead + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-l + h2, .nhs-uk-scoped .app-prose-scope .govuk-body-lead + h2 {
+      padding-top: 10px !important;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-m + .govuk-heading-l, .nhs-uk-scoped .govuk-body + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h2, .nhs-uk-scoped .app-prose-scope .govuk-body + h2, .nhs-uk-scoped .app-prose-scope p + h2, .nhs-uk-scoped .govuk-body-s + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h2, .nhs-uk-scoped .govuk-list + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-list + h2, .nhs-uk-scoped .app-prose-scope ul + h2, .nhs-uk-scoped .app-prose-scope ol + h2 {
+    padding-top: 15px;
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-m + .govuk-heading-l, .nhs-uk-scoped .govuk-body + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h2, .nhs-uk-scoped .app-prose-scope .govuk-body + h2, .nhs-uk-scoped .app-prose-scope p + h2, .nhs-uk-scoped .govuk-body-s + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h2, .nhs-uk-scoped .govuk-list + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-l, .nhs-uk-scoped .app-prose-scope .govuk-list + h2, .nhs-uk-scoped .app-prose-scope ul + h2, .nhs-uk-scoped .app-prose-scope ol + h2 {
+      padding-top: 20px;
+    }
+  }
+  .nhs-uk-scoped .govuk-body-m + .govuk-heading-m, .nhs-uk-scoped .govuk-body + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-m, .nhs-uk-scoped .govuk-body-m + .app-contact-panel__heading, .nhs-uk-scoped .govuk-body + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope p + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h3, .nhs-uk-scoped .app-prose-scope .govuk-body + h3, .nhs-uk-scoped .app-prose-scope p + h3, .nhs-uk-scoped .govuk-body-s + .govuk-heading-m, .nhs-uk-scoped .govuk-body-s + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h3, .nhs-uk-scoped .govuk-list + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-m, .nhs-uk-scoped .govuk-list + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope ul + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope ol + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-list + h3, .nhs-uk-scoped .app-prose-scope ul + h3, .nhs-uk-scoped .app-prose-scope ol + h3, .nhs-uk-scoped .govuk-body-m + .govuk-heading-s, .nhs-uk-scoped .govuk-body + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h4, .nhs-uk-scoped .app-prose-scope .govuk-body + h4, .nhs-uk-scoped .app-prose-scope p + h4, .nhs-uk-scoped .govuk-body-s + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h4, .nhs-uk-scoped .govuk-list + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-list + h4, .nhs-uk-scoped .app-prose-scope ul + h4, .nhs-uk-scoped .app-prose-scope ol + h4 {
+    padding-top: 5px;
+  }
+  @media (min-width: 40.0625em) {
+    .nhs-uk-scoped .govuk-body-m + .govuk-heading-m, .nhs-uk-scoped .govuk-body + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-m, .nhs-uk-scoped .govuk-body-m + .app-contact-panel__heading, .nhs-uk-scoped .govuk-body + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope p + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h3, .nhs-uk-scoped .app-prose-scope .govuk-body + h3, .nhs-uk-scoped .app-prose-scope p + h3, .nhs-uk-scoped .govuk-body-s + .govuk-heading-m, .nhs-uk-scoped .govuk-body-s + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h3, .nhs-uk-scoped .govuk-list + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-m, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-m, .nhs-uk-scoped .govuk-list + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope ul + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope ol + .app-contact-panel__heading, .nhs-uk-scoped .app-prose-scope .govuk-list + h3, .nhs-uk-scoped .app-prose-scope ul + h3, .nhs-uk-scoped .app-prose-scope ol + h3, .nhs-uk-scoped .govuk-body-m + .govuk-heading-s, .nhs-uk-scoped .govuk-body + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope p + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-body-m + h4, .nhs-uk-scoped .app-prose-scope .govuk-body + h4, .nhs-uk-scoped .app-prose-scope p + h4, .nhs-uk-scoped .govuk-body-s + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-body-s + h4, .nhs-uk-scoped .govuk-list + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope ul + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope ol + .govuk-heading-s, .nhs-uk-scoped .app-prose-scope .govuk-list + h4, .nhs-uk-scoped .app-prose-scope ul + h4, .nhs-uk-scoped .app-prose-scope ol + h4 {
+      padding-top: 10px;
+    }
+  }
