@@ -28,6 +28,11 @@ export default class GovHeader extends NavigationMixin(LightningElement) {
     get nhsVariation() {
         return govUKVariationLabel === 'nhs';
     }
+
+    //if no variation exists, return true
+    get noVariation() {
+        return !this.nhsVariation; // if additional variations are created, they can be included in this check
+    }
   
     connectedCallback() {
         getDefaultMenuItems({
