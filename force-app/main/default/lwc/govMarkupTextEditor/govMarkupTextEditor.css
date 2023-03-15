@@ -10,3 +10,16 @@
 .text-area-hidden {
     display: none;
 }
+
+
+/* Scoped CSS */
+.nhs-uk-scoped .heading {
+    background-color: black;
+    color: white;
+  }
+  .nhs-uk-scoped .preview-hidden {
+    display: none;
+  }
+  .nhs-uk-scoped .text-area-hidden {
+    display: none;
+  }
