@@ -14,3 +14,19 @@
     box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
     text-decoration: none;
 }
+
+/* Scoped CSS */
+.nhs-uk-scoped .govuk-tabs_underline {
+    text-decoration: underline;
+  }
+  .nhs-uk-scoped .govuk-tabs_underline:hover {
+    text-decoration: underline 3.5px;
+  }
+  .nhs-uk-scoped .govuk-tabs_focus:focus {
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #fd0;
+    -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+  }
