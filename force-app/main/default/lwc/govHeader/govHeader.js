@@ -8,7 +8,6 @@ import {NavigationMixin} from "lightning/navigation";
 import communityBasePath from '@salesforce/community/basePath';
 import CROWN_LOGO from '@salesforce/resourceUrl/govuklogotypecrown';
 import getDefaultMenuItems from '@salesforce/apex/GovComponentHelper.getDefaultMenuItems';
-import govUKVariationLabel from '@salesforce/label/c.govUKVariation';
 
 export default class GovHeader extends NavigationMixin(LightningElement) {
     
@@ -23,16 +22,6 @@ export default class GovHeader extends NavigationMixin(LightningElement) {
     
     @track menuItems = [];
     @track showMenuInMobile = false;
-
-    //Custom label for NHS branding 
-    get nhsVariation() {
-        return govUKVariationLabel === 'nhs';
-    }
-
-    //if no variation exists, return true
-    get noVariation() {
-        return !this.nhsVariation; // if additional variations are created, they can be included in this check
-    }
   
     connectedCallback() {
         getDefaultMenuItems({
