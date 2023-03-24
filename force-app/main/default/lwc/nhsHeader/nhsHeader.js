@@ -9,7 +9,7 @@ import communityBasePath from '@salesforce/community/basePath';
 import CROWN_LOGO from '@salesforce/resourceUrl/govuklogotypecrown';
 import getDefaultMenuItems from '@salesforce/apex/GovComponentHelper.getDefaultMenuItems';
 
-export default class GovHeader extends NavigationMixin(LightningElement) {
+export default class NhsHeader extends NavigationMixin(LightningElement) {
     
     crownLogo = CROWN_LOGO;
 
@@ -22,6 +22,16 @@ export default class GovHeader extends NavigationMixin(LightningElement) {
     
     @track menuItems = [];
     @track showMenuInMobile = false;
+
+    //Custom label for NHS branding 
+    get nhsVariation() {
+        return govUKVariationLabel === 'nhs';
+    }
+
+    //if no variation exists, return true
+    get noVariation() {
+        return !this.nhsVariation; // if additional variations are created, they can be included in this check
+    }
   
     connectedCallback() {
         getDefaultMenuItems({
@@ -36,7 +46,7 @@ export default class GovHeader extends NavigationMixin(LightningElement) {
 
                     // update the menu item's url for this community's base path and activate the target page menu item
                     menuItems.forEach(menuItem => {
-                        menuItem.class = (menuItem.Target === pageTarget) ? "govuk-header__navigation-item govuk-header__navigation-item--active" : "govuk-header__navigation-item";
+                        menuItem.class = (menuItem.Target === pageTarget) ? "nhsuk-header__navigation-item nhsuk-header__navigation-item--active" : "nhsuk-header__navigation-item";
                         menuItem.fullTarget = (menuItem.Type === "InternalLink") ? (communityBasePath + menuItem.Target) : (menuItem.Target);
                         menuItem.targetPref = (menuItem.Type === "ExternalLink" &&  menuItem.TargetPrefs === "None") ? "_blank"  : "_self";
                     });
@@ -54,12 +64,11 @@ export default class GovHeader extends NavigationMixin(LightningElement) {
     toggleButton(event) {
         if(this.showMenuInMobile) {
             this.showMenuInMobile = false;
-            this.template.querySelector('.govuk-header__navigation').classList.remove('govuk-header__navigation--open');
+            this.template.querySelector('nav.nhsuk-header__navigation').classList.add('js-show');
         } else {
             this.showMenuInMobile = true;
-            this.template.querySelector('.govuk-header__navigation').classList.add('govuk-header__navigation--open');
+            this.template.querySelector('nav.nhsuk-header__navigation').classList.remove('js-show');
         }
         
     }
-
 }
