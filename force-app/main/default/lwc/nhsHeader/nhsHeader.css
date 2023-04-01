@@ -130,12 +130,6 @@
     }
 }
 
-.nhsuk-width-container {
-    max-width: 960px;
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
 @media (max-width: 40.0625em) {
     .nhsuk-width-container {
         margin: 0;
@@ -595,7 +589,7 @@
         background-color:#005eb8;
         display: block;
         margin: 0 auto;
-        max-width: 1024px
+        max-width: 1200px;
     }
 }
 
@@ -787,3 +781,25 @@
         justify-content:flex-start
     }
 }
+
+.nhsuk-width-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@supports (margin:max(calc(0px))) {
+    .nhsuk-width-container {
+        margin-right: max(15px,calc(15px + env(safe-area-inset-right)));
+        margin-left: max(15px,calc(15px + env(safe-area-inset-left)));
+    }
+}
+
+@media (min-width: 1020px) {
+    @supports (margin:max(calc(0px))) {
+        .nhsuk-width-container {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
