@@ -71,4 +71,19 @@ export default class NhsHeader extends NavigationMixin(LightningElement) {
         }
         
     }
+
+    search(event) {
+        event.preventDefault();
+        
+        let searchTerm = this.template.querySelector('.govuk-search__input').value;
+        
+        let targetUrl = '/global-search/' + searchTerm;
+        // navigate to global search page with search term
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: targetUrl
+            }
+        });
+    }
 }
