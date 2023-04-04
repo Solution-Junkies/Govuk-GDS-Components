@@ -5,6 +5,8 @@
  **/
 import { LightningElement, wire, api, track } from 'lwc';
 import { FlowAttributeChangeEvent } from 'lightning/flowSupport';
+import deleteFile from '@salesforce/apex/FileUploadController.deleteFile';
+import getAttachedFiles from '@salesforce/apex/FileUploadController.getAttachedFiles';
 import saveFiles from '@salesforce/apex/FileUploadController.saveFiles';
 import { MessageContext, publish, subscribe, unsubscribe } from 'lightning/messageService';
 import REGISTER_MC from '@salesforce/messageChannel/registrationMessage__c';
@@ -28,6 +30,9 @@ export default class GovFileUpload extends LightningElement {
     @api recordId = "";
     
     @track hasErrors = false;
+
+    @track contentDocuments = [];
+    filesLoaded = false;
 
     get formGroupClass() {
         let formGroupClass = "";
@@ -80,6 +85,14 @@ export default class GovFileUpload extends LightningElement {
                 freader.readAsDataURL(file);
             }
             this.fileNames = filesName.slice(0, -1);
+            //this.template.querySelector('.govuk-file-upload').value = '';
+            
+            if (this.contentDocuments.length > 0) {
+                this.filesLoaded = true;
+                console.log('files: ' + this.contentDocuments.length);
+            } else {
+                this.filesLoaded = false;
+            }
         }
     }
 
@@ -89,11 +102,36 @@ export default class GovFileUpload extends LightningElement {
             strRecId: this.recordId
          })
         .then(data => {
+            // data is a list of ContentVersion records including each record's Title and ContentDocumentId
+            let contentDocumentsData = data;
+            this.contentDocuments = [...contentDocumentsData];
+            console.log('loaded files');
+            console.log(this.contentDocuments);
         })
         .catch(error => {
             this.hasErrors = true;
             this.errorMessage = error;
         }); 
+    }
+
+    handleDeleteFile(event) {
+        let fileDocumentId = event.target.getAttribute("data-row-id"); // contentDocumentId of the file in the row being deleted
+        console.log('contentdocumentid: ' + fileDocumentId);
+        deleteFile({ fileId : fileDocumentId })
+        .then(data => {
+            // update the table to remove the file
+            let fileList = this.contentDocuments;
+            for(let i = 0; i < fileList.length; i++) {
+                if (fileList[i].Id == fileDocumentId) {
+                    fileList.splice(i, 1);
+                }
+            }
+            this.contentDocuments = [...fileList];
+        }).catch(error => {
+            this.hasErrors = true;
+            this.errorMessage = error;
+            console.log(error);
+        });
     }
 
     // messaging attributes
@@ -125,6 +163,19 @@ export default class GovFileUpload extends LightningElement {
         setTimeout(() => {
             publish(this.messageContext, REGISTER_MC, { componentId: this.fieldId });
         }, 100);
+
+        // get existing attachments - TBD if this needs to stay or be removed
+        getAttachedFiles({ recordId : this.recordId })
+        .then(data => {
+            data.forEach(file => {
+                this.contentDocuments.push(file);
+            });
+            console.log('loaded files');
+            console.log(this.contentDocuments);
+        }).catch(error => {
+            this.hasErrors = true;
+            this.errorMessage = error;
+        });
     }
 
     disconnectedCallback() {

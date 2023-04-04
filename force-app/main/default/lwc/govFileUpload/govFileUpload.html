@@ -2,16 +2,40 @@
     <c-gov-c-s-s-provider></c-gov-c-s-s-provider>
     <div class="govuk-width-container js-enabled">
         <div class={formGroupClass}>
-            <label class="govuk-label" for="file-upload">
-            {fileUploadLabel}
-            </label>
-            <span id="file-upload-error" class="govuk-error-message slds-hyphenate" if:true={hasErrors}>
-                <span class="govuk-visually-hidden">Error:</span>&nbsp;{errorMessage}
-            </span>
-            <input class={inputClass} id="file-upload" name="file-upload" type="file" accept={acceptedFormats} multiple onchange={handleFilesChange} aria-describedby="file-upload-error">
-            <div if:true={fileNames} class="slds-text-body_medium slds-text-color_success">
-                {fileNames} 
+            <div>
+                <label class="govuk-label" for="file-upload">
+                {fileUploadLabel}
+                </label>
+                <span id="file-upload-error" class="govuk-error-message slds-hyphenate" if:true={hasErrors}>
+                    <span class="govuk-visually-hidden">Error:</span>&nbsp;{errorMessage}
+                </span>
+                <input class={inputClass} id="file-upload" name="file-upload" type="file" accept={acceptedFormats} multiple onchange={handleFilesChange} aria-describedby="file-upload-error">
             </div>
+            
+                <div class="slds-text-color_success slds-p-around_medium slds-box">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Action</th>
+                        </tr>
+                        <template for:each={contentDocuments} for:item="document">
+                            <tr key={document.Id}>
+                                <td>{document.Title}</td>
+                                <td>
+                                    <lightning-button-icon 
+                                        icon-name="utility:delete"
+                                        alternative-text="Delete"
+                                        class="slds-m-horizontal_x-small" 
+                                        title="Delete"
+                                        data-row-id={document.Id}
+                                        onclick={handleDeleteFile}
+                                    ></lightning-button-icon>
+                                </td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+            
         </div>
     </div>
 </template>
