@@ -9,5 +9,4 @@ import {NavigationMixin} from "lightning/navigation";
 export default class nhsHeroBanner extends NavigationMixin(LightningElement) {
     @api heroDescription = "Hero Description";
     @api heroTitle = "Hero Title";
-    @api heroImage = "Hero Image URL";
 }
