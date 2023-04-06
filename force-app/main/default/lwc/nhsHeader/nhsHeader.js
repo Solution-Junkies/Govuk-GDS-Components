@@ -22,16 +22,6 @@ export default class NhsHeader extends NavigationMixin(LightningElement) {
     
     @track menuItems = [];
     @track showMenuInMobile = false;
-
-    //Custom label for NHS branding 
-    get nhsVariation() {
-        return govUKVariationLabel === 'nhs';
-    }
-
-    //if no variation exists, return true
-    get noVariation() {
-        return !this.nhsVariation; // if additional variations are created, they can be included in this check
-    }
   
     connectedCallback() {
         getDefaultMenuItems({
@@ -70,5 +60,20 @@ export default class NhsHeader extends NavigationMixin(LightningElement) {
             this.template.querySelector('nav.nhsuk-header__navigation').classList.remove('js-show');
         }
         
+    }
+
+    search(event) {
+        event.preventDefault();
+        
+        let searchTerm = this.template.querySelector('.govuk-search__input').value;
+        
+        let targetUrl = '/global-search/' + searchTerm;
+        // navigate to global search page with search term
+        this[NavigationMixin.Navigate]({
+            type: 'standard__webPage',
+            attributes: {
+                url: targetUrl
+            }
+        });
     }
 }
