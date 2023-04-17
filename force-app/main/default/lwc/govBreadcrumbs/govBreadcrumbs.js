@@ -10,7 +10,8 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
 
     @api pageLabels = "";
     @api pageAPINames = "";
-
+    @api breadcrumbBgColour = "";
+    @api breadcrumbTextColour = "";
     @track pathItems = [];
 
     connectedCallback() {
@@ -44,4 +45,11 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
         }
     }
 
+    get getBackgroundColour() {
+        return `background-color:${this.breadcrumbBgColour}`;
+    }
+
+    get getTextColour() {
+        return `color:${this.breadcrumbTextColour}`;
+    }
 }
