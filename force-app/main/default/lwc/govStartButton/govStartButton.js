@@ -11,6 +11,7 @@ export default class GovStartButton extends NavigationMixin(LightningElement) {
     @api link;
 
     handleClick(event) {
+        event.preventDefault();
         this[NavigationMixin.Navigate]({
             type: 'comm__namedPage',
             attributes: {

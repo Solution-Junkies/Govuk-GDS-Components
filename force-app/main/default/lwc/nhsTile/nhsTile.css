@@ -6,6 +6,7 @@
     line-height: 40px;
     background: #7C2855;
     display: block;
+    margin-bottom: 40px;
 }
 
 .govuk-tile--grey {
@@ -71,6 +72,12 @@
     border-radius: 6px;
     min-height: 165px;
     display: flex;
+}
+
+@media (min-width: 26.25em) and (max-width: 48em) {
+    .govuk-tile_type--content {
+        min-height: 200px;
+    }
 }
 
 @media (max-width: 26.25em) {
