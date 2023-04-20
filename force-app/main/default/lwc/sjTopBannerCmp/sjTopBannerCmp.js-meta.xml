@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default,lightning__HomePage">
+            <property name="title" type="String" label="Title" description="The HTML to display"/>
+            <property name="contentHTML" type="String" label="Body Text" description="Content text in HTML format"/>
+            <property name="buttonText" type="String" label="Button Text" description="Button text"/>
+            <property name="buttonLink" type="String" label="Button Link" description="Button link"/>
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>
