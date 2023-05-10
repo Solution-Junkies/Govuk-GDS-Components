@@ -17,3 +17,8 @@
 .govuk-breadcrumbs__link:link {
     color: #005EB8;
 }
+
+.govuk-breadcrumbs__list-item:last-of-type .govuk-breadcrumbs__link {
+    text-decoration: none;
+    pointer-events: none;
+}
