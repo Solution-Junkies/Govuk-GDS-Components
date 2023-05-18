@@ -46,7 +46,11 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
     }
 
     get getBackgroundColour() {
-        return `background-color:${this.breadcrumbBgColour}`;
+        if(this.breadcrumbBgColour == 'white' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == "") {
+            return `background-color:${this.breadcrumbBgColour}; border-bottom: 1px solid #DDDBDA`;
+        } else {
+            return `background-color:${this.breadcrumbBgColour}`;
+        }   
     }
 
     get getTextColour() {
