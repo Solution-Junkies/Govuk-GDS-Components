@@ -33,7 +33,8 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
     handleClick(event) {
         event.preventDefault();
         if(event.currentTarget.dataset.id && event.currentTarget.dataset.id !== '#') {
-            if (event.currentTarget.dataset.label.toUpperCase().includes('LIST')) {
+            //Breadcrumbs will pick up Object List pages if the title of the page contains "List", otherwise it will target Community pages
+            if (event.currentTarget.dataset.label.toUpperCase().includes('LIST')) { 
                 this[NavigationMixin.Navigate]({
                     type: 'standard__objectPage',
                     attributes: {
