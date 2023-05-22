@@ -6,7 +6,7 @@
             <ol class="govuk-breadcrumbs__list">
               <template for:each={pathItems} for:item="path">
                 <li key={path.pageName} class="govuk-breadcrumbs__list-item">
-                  <a href="#" class="govuk-breadcrumbs__link" data-id={path.pageName} onclick={handleClick} style={getTextColour}>{path.pageLabel}</a>
+                  <a href="#" class="govuk-breadcrumbs__link" data-id={path.pageName} data-label={path.pageLabel} onclick={handleClick} style={getTextColour}>{path.pageLabel}</a>
                 </li>
               </template>
             </ol>
