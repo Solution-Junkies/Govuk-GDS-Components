@@ -10,8 +10,7 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
 
     @api pageLabels = "";
     @api pageAPINames = "";
-    @api breadcrumbBgColour = "";
-    @api breadcrumbTextColour = "";
+
     @track pathItems = [];
 
     connectedCallback() {
@@ -34,26 +33,28 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
     handleClick(event) {
         event.preventDefault();
         if(event.currentTarget.dataset.id && event.currentTarget.dataset.id !== '#') {
-            this[NavigationMixin.Navigate]({
-                type: 'comm__namedPage',
-                attributes: {
-                    name: event.currentTarget.dataset.id
-                },
-                state: {
-                }
-            });
+            //Breadcrumbs will pick up Object List pages if the title of the page contains "List", otherwise it will target Community pages
+            if (event.currentTarget.dataset.label.toUpperCase().includes('LIST')) { 
+                this[NavigationMixin.Navigate]({
+                    type: 'standard__objectPage',
+                    attributes: {
+                        objectApiName: event.currentTarget.dataset.id,
+                        actionName: 'list'
+                    },
+                    state: {
+                        filterName: 'Default'
+                    }
+                });                
+            } else {
+                this[NavigationMixin.Navigate]({
+                    type: 'comm__namedPage',
+                    attributes: {
+                        name: event.currentTarget.dataset.id
+                    },
+                    state: {
+                    }
+                });                
+            }
         }
-    }
-
-    get getBackgroundColour() {
-        if(this.breadcrumbBgColour == 'white' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == "") {
-            return `background-color:${this.breadcrumbBgColour}; border-bottom: 1px solid #DDDBDA`;
-        } else {
-            return `background-color:${this.breadcrumbBgColour}`;
-        }   
-    }
-
-    get getTextColour() {
-        return `color:${this.breadcrumbTextColour}`;
     }
 }
