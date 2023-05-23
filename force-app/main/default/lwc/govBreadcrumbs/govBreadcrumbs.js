@@ -10,7 +10,8 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
 
     @api pageLabels = "";
     @api pageAPINames = "";
-
+    @api breadcrumbBgColour = "";
+    @api breadcrumbTextColour = "";
     @track pathItems = [];
 
     connectedCallback() {
@@ -56,5 +57,17 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
                 });                
             }
         }
+    }
+
+    get getBackgroundColour() {
+        if(this.breadcrumbBgColour == 'white' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == '#fff' || this.breadcrumbBgColour == "") {
+            return `background-color:${this.breadcrumbBgColour}; border-bottom: 1px solid #DDDBDA`;
+        } else {
+            return `background-color:${this.breadcrumbBgColour}`;
+        }   
+    }
+
+    get getTextColour() {
+        return `color:${this.breadcrumbTextColour}`;
     }
 }
