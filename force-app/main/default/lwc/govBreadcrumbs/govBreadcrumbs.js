@@ -11,7 +11,7 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
     @api pageLabels = "";
     @api pageAPINames = "";
     @api breadcrumbBgColour = "";
-    @api breadcrumbTextColour = "";
+    @api breadcrumbTextColour = "#fff";
     @track pathItems = [];
 
     connectedCallback() {
@@ -36,16 +36,7 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
         if(event.currentTarget.dataset.id && event.currentTarget.dataset.id !== '#') {
             //Breadcrumbs will pick up Object List pages if the title of the page contains "List", otherwise it will target Community pages
             if (event.currentTarget.dataset.label.toUpperCase().includes('LIST')) { 
-                this[NavigationMixin.Navigate]({
-                    type: 'standard__objectPage',
-                    attributes: {
-                        objectApiName: event.currentTarget.dataset.id,
-                        actionName: 'list'
-                    },
-                    state: {
-                        filterName: 'Default'
-                    }
-                });                
+                history.back();              
             } else {
                 this[NavigationMixin.Navigate]({
                     type: 'comm__namedPage',
@@ -69,5 +60,12 @@ export default class GovBreadcrumbs extends NavigationMixin(LightningElement) {
 
     get getTextColour() {
         return `color:${this.breadcrumbTextColour}`;
+    }
+
+    renderedCallback() {
+        this.template
+            .querySelector(".govuk-breadcrumbs-container ")
+            .style.setProperty("--breadCrumb-arrow", this.breadcrumbTextColour);
+
     }
 }
