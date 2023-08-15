@@ -1,3 +1,9 @@
+/*Breadcrumb background sets up to --page-theme-colour when no colour is set in Digital Experience builder */
+.govuk-breadcrumbs-container {
+    background-color: var(--page-theme-colour);
+    --breadCrumb-arrow: #fff;
+}
+
 .govuk-breadcrumbs__list-item {
     margin:  8px 0 8px 14px;
     line-height: 32px;
@@ -5,17 +11,13 @@
 }
 
 .govuk-breadcrumbs__list-item:before {
-    border-color: #AEB7BD;
+    border-color: var(--breadCrumb-arrow);
     border-width: 2px 2px 0 0;
 }
 
 .govuk-breadcrumbs {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.govuk-breadcrumbs__link:link {
-    color: #005EB8;
 }
 
 .govuk-breadcrumbs__list-item:last-of-type .govuk-breadcrumbs__link {
